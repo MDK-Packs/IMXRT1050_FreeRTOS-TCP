@@ -47,7 +47,6 @@
   </layers>
 
   <packages>
-    <package name="B-L475E-IOT01A_BSP" vendor="Keil" version="1.0.0:1.0.0"/>
     <package name="CMSIS-Driver" vendor="ARM"/>
     <package name="CMSIS-FreeRTOS" vendor="ARM" version="10.4.3:10.4.3"/>
     <package name="CMSIS" vendor="ARM"/>
@@ -69,7 +68,7 @@
     <compiler name="AC6" version="6.0.0:6.99.99"/>
   </compilers>
 
-  <target Bname="B-L475E-IOT01A" Bvendor="STMicroelectronics" Bversion="1" Ddsp="NO_DSP" Dendian="Little-endian" Dfpu="DP_FPU" Dmve="NO_MVE" Dname="MIMXRT1052DVL6B" Dsecure="Non-secure" Dtz="NO_TZ" Dvendor="NXP:11">
+  <target Bname="EVKB-IMXRT1050_MDK" Bvendor="STMicroelectronics" Bversion="Rev. A1" Ddsp="NO_DSP" Dendian="Little-endian" Dfpu="DP_FPU" Dmve="NO_MVE" Dname="MIMXRT1052DVL6B" Dsecure="Non-secure" Dtz="NO_TZ" Dvendor="NXP:11">
     <output intdir="./Objects/" name="image" outdir="./Objects/" type="exe"/>
     <ldflags add="--diag_suppress 6314,6329 --strict --predefine=&quot;-DXIP_BOOT_HEADER_ENABLE=1&quot; --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers --entry=Reset_Handler" compiler="AC6" file="./RTE/Device/MIMXRT1052DVL6B/MIMXRT1052xxxxx_flexspi_nor.scf"/>
     <cflags add="-DMBEDTLS_CONFIG_FILE=&quot;/&quot;aws_mbedtls_config.h/&quot;&quot; -O0 -Wno-documentation -Wno-documentation-unknown-command -Wno-license-management -Wno-missing-noreturn -Wno-missing-prototypes -Wno-missing-variable-declarations -Wno-nonportable-include-path -Wno-packed -Wno-parentheses-equality -Wno-pragma-pack -Wno-reserved-id-macro -Wno-sign-conversion -Wno-unused-macros -ffunction-sections -fno-rtti -fshort-enums -fshort-wchar -funsigned-char -gdwarf-4 -std=c99 -xc" compiler="AC6"/>
